@@ -1,0 +1,350 @@
+*{
+    margin: auto;
+    padding: 0;
+}
+/* ****COMMON CSS**** */
+.fixd-width{
+    width: 1200px;
+    margin: auto;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-end{
+    text-align: right;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+ .left{
+     float: left;
+ }
+ .right{
+     float: right;
+ }
+ .clear::after{
+     content: "";
+     display: block;
+     clear: both;
+ }
+
+/* *** COMMON CSS END*** */
+/* ****HEADER PRAT STRAT** */
+.header {
+    background-color: #1a1918;
+    position: relative;
+    z-index: 999;
+}
+.logo-prat{}
+.logo-prat img{}
+nav{}
+nav ul{}
+nav ul li {
+    display: inline-block;
+    position: relative;
+    line-height: 54px;
+}
+nav ul li a{
+    display: block;
+    font-size: 20px;
+    color: #fff ;
+    padding: 10px;
+    margin: 0 10px;
+    transition: .4s;
+    position: relative;
+   
+ 
+}
+nav ul li a::after{
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: #c69453;
+    position: absolute;
+    top: 59px;
+    left: 0;
+    transform: scale(0);
+    transition: .5s;
+}
+nav ul li a:hover::after{
+    transform: scale(1);
+}
+nav ul li ul li a{
+    color: #000;
+}
+
+nav ul li ul li:hover a{
+    color: #c69453;
+}
+nav ul li:hover > a{
+color: #c69453;
+}
+
+nav ul li  ul{
+    position: absolute;
+    top: 102%;
+    left: 0;
+    width: 200px;
+    background-color:#fff;
+   
+}
+nav ul li ul li a:hover::after{
+    display: none;
+}
+nav ul li  ul {
+ opacity: 0;
+ visibility: hidden;
+ transition: .4s;
+ transform: scaleY(0);
+}
+nav ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+
+}
+nav ul li  ul li a:hover{
+
+}
+/* ****HEADER PRAT END** */
+/* ****BANNER SECTION STRAT**** */
+.banner{
+ background: url(../image/baanerimg.jpg) no-repeat center;
+ background-size: cover;
+ padding: 200px 0;
+ position: relative;
+ z-index: 1;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.37);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.banner h1{
+    font-size: 60px;
+    color: #fff;
+}
+.banner h2{
+    position: relative;
+    font-size: 36px;
+    color: #fff;
+    
+}
+.banner h2::before {
+    content: "";
+    width: 76px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    left: 334px;
+    top: 23px;
+}
+.banner h2::after{
+    content: "";
+    width: 76px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    right: 334px;
+    top: 23px;
+}
+.red {
+    display: inline-block;
+    background-color: #c69453;
+    padding: 13px 35px;
+    border-radius: 15px;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    transition: .5s;
+}
+.red:hover{
+    background-color: #fff;
+    color: #c69453;
+}
+/* ****BANNER SECTION END**** */
+/* *****SERVICE BOX STRAT*** */
+.service{
+    background-color: #f8f8f8;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.service-box{
+    width: 21%;
+    margin-right: 2%;
+    margin-left: 2%;
+    padding: 40px 0;
+    background-color: #fff;
+    margin-top: 40px;
+}
+.service-box .s-img {
+    margin: 11px 0;
+    transition: .8s;
+}
+.service-box:hover .s-img{
+    transform: rotateY(360deg);
+
+}
+
+.service-box .s-img img{}
+.service-box h3{
+    font-size: 19px;
+}
+.service-box p{
+    font-size: 19px;
+    margin-top: 10px;
+}
+.service-box .white{
+    display: inline-block;
+    background-color: #c69453;
+    padding: 13px 35px;
+    border-radius: 8px;
+    margin-top: 50px;
+  transform: translateY(0);
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    transition: .5s;
+}
+.service-box:hover .white{
+    background-color: #c8c8c8;
+    border: none;
+    color: #c69453;
+}
+.white:hover{
+transform: translateY(15px);
+ background-color: #000!important;
+color: #fff!important;
+}
+.service-box:hover{
+    background-color: #e9e6e5;
+  
+}
+.blue{
+
+     display: inline-block;
+     color: #fff;
+     padding: 13px 20px;
+     margin-top: 10px;
+     font-size: 20px;
+     background-color: #000;
+     border: none;
+     transition: .5s;
+
+
+}
+.blue:hover{
+    background-color: #c69453;
+
+}
+/* *****SERVICE BOX END*** */
+/* ****ARTICALE PRAT*** */
+.articale{
+    background-color: #f8f8f8;
+    padding: 59px 0;
+}
+.main-articale{}
+.video-prat{
+    width: 49%;
+    margin-right: 2%;
+    /* padding: 44px 0; */
+}
+.articale-prat{
+    width: 49%;
+    /* padding: 38px 0; */
+}
+.articale-prat h2{
+    font-size: 31px;
+    padding-bottom: 20px;
+}
+.articale-prat h2 span {
+    color: #c37f26;
+    font-size: 32px;
+}
+.articale-prat p{
+    font-size: 17px;
+}
+/* ****ARTICALE PRAT END*** */
+/* *****CONTACT SECTION STRAT***** */
+.contact{
+    background: url(../image/picture5.jpg) no-repeat ;
+    background-position: top right;
+    padding: 320px 0;
+    background-size: cover;
+}
+.contact-from{
+    width: 45%;
+    position: relative;
+    bottom: 100px;
+    
+}
+form{
+
+}
+form input{
+    padding: 10px  ;
+    width: 100%;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border: none;
+}
+.massege{
+    width: 100%;
+    border: none;
+    padding: 10px;
+}
+.yellow{
+    display: inline-block;
+    background-color: #c69453;
+    padding: 13px 35px;
+    margin-top: 50px;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+}
+/* *****CONTACT SECTION END***** */
+/* ***** FOOTER PRAT**** */
+footer{
+    background-color: #6d6d6d;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 15px;
+}
+.write-section{
+    width: 50%;
+}
+.social-section{ width: 50%;
+}
+.social-section{
+    text-align: right;
+    padding: 0px 0px;
+}
+.social-section a{
+    display: inline-block;
+}
+.social-section a i{
+    /* text-align: right; */
+    padding: 0px 20px;
+    color: #fff;
+    font-size: 20px;
+}
+/* ***** FOOTER PRAT END**** */
